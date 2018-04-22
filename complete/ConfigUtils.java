@@ -263,7 +263,7 @@ public class ConfigUtils {
                 return Integer.parseInt(String.valueOf(value).trim());
             }
             catch (final NumberFormatException e) {
-                LOG.warn("invalid value for '{}' in storm config ({}); falling back to default ({})", CONFIG_BUFFER_MAX_MESSAGES, value, DEFAULT_BUFFER_MAX_MESSAGES);
+               /* LOG.warn("invalid value for '{}' in storm config ({}); falling back to default ({})", CONFIG_BUFFER_MAX_MESSAGES, value, DEFAULT_BUFFER_MAX_MESSAGES); */
             }
         }
 

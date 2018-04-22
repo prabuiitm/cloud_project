@@ -40,9 +40,9 @@ public class AuthenticationBolt extends BaseRichBolt
 	
 	OutputCollector _OutputCollector;
 	public JSONObject jsonobject=new JSONObject();
-	String clientid=null;
-	String devicetypeid=null;
-	String deviceid=null;
+	String clientid = null;
+	String devicetypeid = null;
+	String deviceid = null;
 	String keyspacename=null;
 	String eventid=null;
 	static int nonauthenticateclinetid=0;
@@ -80,7 +80,7 @@ public class AuthenticationBolt extends BaseRichBolt
 					e1.printStackTrace();
 				}
 		        jsonobject = (JSONObject) obj;
-			System.out.println("Hello " + jsonobject.toString());
+			//System.out.println("Hello " + jsonobject.toString());
 			
 			try{
 			String[] uniqueidentifier=jsonobject.get("KEY").toString().split("-");
